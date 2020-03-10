@@ -25,6 +25,8 @@ let toUpperCaseName = [];
 let initialsName = [];
 let multiplied100 = [];
 let pow3 = [];
+let sortAZ = [];
+let sortZA = [];
 
 
 //inventors name start with "a"
@@ -109,4 +111,16 @@ console.log("Print out all the inventors' names in uppercase:",toUpperCaseName);
 console.log("Print out an array of every number multiplied by 100", multiplied100 = numbers.map(num=>num*100));
 
 //Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).
-console.log("Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).", =
+console.log("Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).")
+
+//Sort all the inventors in alphabetical order, A-Z.
+console.log("Sort all the inventors in alphabetical order, A-Z",sortAZ=inventors.sort())
+
+//Sort all the inventors in reverse alphabetical order, Z-A. Do not use the reverse method.
+console.log("Sort all the inventors in reverse alphabetical order, Z-A. Do not use the reverse method", sortZA=inventors.sort((a,b)=>{if (a>b){return -1}; if (a<b){return 1}return 0;}));
+
+//Sort all the inventors by length of name, shortest name first.
+console.log("Sort all the inventors by length of name, shortest name first.", sortAZ=inventors.sort((a,b)=>{if(a.length > b.length){return 1}; if(a.length < b.length){return -1}; return 0; }));
+
+//Sort all the inventors by length of name, longest name first. Do not use the reverse method.
+console.log("Sort all the inventors by length of name, shortest name first.", sortZA=inventors.sort((a,b)=>{if(a.length > b.length){return -1}; if(a.length < b.length){return 1}; return 0; }));
