@@ -68,8 +68,6 @@ console.log(number2Digits);
 //Print out an array of the numbers which are prime.
 console.log("Print out an array of the numbers which are prime.",isPrime = numbers.filter((n)=>{const regex = /^(11+?)\1+?$/; return !('1'.repeat(n).match(regex))}));
 
-
-
 //Print out the first name of each inventor.
 inventorsFirstName = inventors.map((firstName)=>{
   return firstName.split(" ",1);
@@ -104,6 +102,8 @@ console.log("Print out an array of every number multiplied by 100", multiplied10
 //Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).
 console.log("Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).")
 
+
+//SORT
 //Sort all the inventors in alphabetical order, A-Z.
 console.log("Sort all the inventors in alphabetical order, A-Z",sortAZ=inventors.sort())
 
@@ -153,7 +153,6 @@ console.log("Does every inventor have first name that's longer than 4 characters
 
 
 /// TIPS
-
 let number = 3; 
 if (number < 1) {
   console.log("number < 1")
