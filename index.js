@@ -66,11 +66,7 @@ number2Digits = numbers.filter((num)=> {
 console.log(number2Digits);
 
 //Print out an array of the numbers which are prime.
-// numberPrime = numbers.filter((num) => {
-//   if (num >= 2) {
-//     for (i = 2; i < num.length; i++) {
-//     if (num % i === 0) {} 
-//     console.log("Print out an array of the numbers which are prime", numberPrime)
+console.log("Print out an array of the numbers which are prime.",isPrime = numbers.filter((n)=>{const regex = /^(11+?)\1+?$/; return !('1'.repeat(n).match(regex))}));
 
 
 
